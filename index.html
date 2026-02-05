@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Site</title>
+    <style>
+        body{
+            background-color:rgb(255, 222, 232);
+        }
+        .shadow-inset-center {
+	-webkit-animation: shadow-inset-center 0.4s  infinite cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: shadow-inset-center 0.4s infinite cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    height:50px;
+    width:250px;
+    padding-top: 20px;
+    padding-left: 20px;
+    color:maroon;
+    background-color: lightblue;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+             
+}
+
+@-webkit-keyframes shadow-inset-center {
+  0% {
+    -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+            box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+  }
+}
+@keyframes shadow-inset-center {
+  0% {
+    -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+            box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+  }
+}
+
+  .shadow-drop-2-center {
+   
+	-webkit-animation: shadow-drop-2-center 1.5s infinite cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: shadow-drop-2-center 1.5s  infinite cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          font-size:xx-large;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-style: italic;
+            color:darkred;
+            background-color:rgb(247, 141, 176);
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 450px;
+            padding-right:0px;
+            margin-top: 5px;
+            margin-bottom:5px;
+            margin-left:10px;
+            margin-right:10px;
+            border-radius: 10px;
+            border-style:double;    
+          
+
+}
+
+@-webkit-keyframes shadow-drop-2-center {
+  0% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translateZ(50px);
+            transform: translateZ(50px);
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes shadow-drop-2-center {
+  0% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translateZ(50px);
+            transform: translateZ(50px);
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+.parent{
+            display:flex;
+            justify-content: center;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top:50px;
+            animation:flip 4s infinite linear;
+}
+
+.box1{
+  width:250px;
+  height:220px;
+  background-color:crimson;
+  color:white;
+  padding-left: 5px;
+padding-right: 25px;
+padding-bottom: 22px;
+padding-top: 8px;
+border-radius: 10px;
+font-size: larger;
+font-family:Arial, Helvetica, sans-serif;
+font-style: oblique;
+}
+.box2{ 
+  width:250px;
+  height:220px;
+  background-color:green;
+  color:white;
+  padding-left: 5px;
+padding-right: 25px;
+padding-bottom: 22px;
+padding-top: 8px;
+border-radius: 10px;
+font-size: larger;
+font-family:Arial, Helvetica, sans-serif;
+font-style: oblique; 
+}
+@keyframes flip{
+                0%{
+                    transform:flip(0deg);
+                    margin-left:0px;
+                }
+                50%{
+                   
+                    transform:flip(360deg);
+                    margin-left:100px; 
+                }
+                100%{
+                    transform:flip(0deg) ;
+                    margin-left:0px;
+                }
+            }
+ .shadow-drop-center {
+	-webkit-animation: shadow-drop-center 1s infinite cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: shadow-drop-center 1s infinite(0.250, 0.460, 0.450, 0.940) both;
+          text-align: center;
+          margin-left: 400px;
+          margin-right: 400px;
+          padding-right: 50px;
+          background-color:darkturquoise;
+          border-radius: 10px;
+          border-style: ridge;
+}
+
+
+@-webkit-keyframes shadow-drop-center {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes shadow-drop-center {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+.animation-steps-container{
+display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 40px 20px;
+        font-family: 'Arial', sans-serif;
+        background-color:lightblue;
+        border-radius: 10px;
+        
+    }
+
+    .step-box {
+        flex: 1; 
+        max-width: 350px;
+        padding: 30px 20px;
+        border-radius: 15px;
+        color:white;
+        text-align: center;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        
+        /* Animation properties */
+        opacity: 0;
+        animation: fadeInLeft 5s  infinite ease forwards;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    
+    .step-box:hover {
+        transform: translateY(-12px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        cursor: pointer;
+    }
+
+    
+    .blue-step { background-color: #2980b9; animation-delay: 0.2s; }
+    .orange-step { background-color: #e67e22; animation-delay: 0.5s; }
+    .purple-step { background-color: #8e44ad; animation-delay: 0.8s; }
+
+    .step-box h3 {
+        margin-bottom: 15px;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+    }
+
+    .step-box p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    
+    @keyframes fadeInLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    
+    @media (max-width: 768px) {
+        .animation-steps-container {
+            flex-direction: column;
+            align-items: center;
+        }
+        .step-box {
+            width: 100%;
+        }
+      }
+        
+         
+ 
+.shadow-pop-tr {
+	-webkit-animation: shadow-pop-tr 1s  infinite cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: shadow-pop-tr 1s infinite(0.470, 0.000, 0.745, 0.715) both;
+           margin-top: 50px;
+          margin-bottom:50px;
+          margin-left: 50px;
+          margin-right: 50px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          padding-left: 400px;
+          padding-right: 350px;
+          font-size:x-large;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-weight: bold;
+          font-style:italic;
+          border-radius: 10px;
+          color: aliceblue;
+          background-color:mediumvioletred;
+}
+
+@-webkit-keyframes shadow-pop-tr {
+  0% {
+    -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+            box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    -webkit-transform: translateX(0) translateY(0);
+            transform: translateX(0) translateY(0);
+  }
+  100% {
+    -webkit-box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+            box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+    -webkit-transform: translateX(-8px) translateY(8px);
+            transform: translateX(-8px) translateY(8px);
+  }
+}
+@keyframes shadow-pop-tr {
+  0% {
+    -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+            box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    -webkit-transform: translateX(0) translateY(0);
+            transform: translateX(0) translateY(0);
+  }
+  100% {
+    -webkit-box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+            box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+    -webkit-transform: translateX(-8px) translateY(8px);
+            transform: translateX(-8px) translateY(8px);
+  }
+}
+footer {
+        
+        background-color:sienna
+        color: rgb(255, 255, 255);
+        padding: 30px 8px;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        position: relative;
+        overflow: hidden;
+        margin-top: 50px;
+        border-top: 5px ; 
+        border-radius: 10px;
+    }
+
+    
+    .thanks-line {
+        font-size: 32px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+        display: inline-block;
+        
+        
+        animation: floating 3s ease-in-out infinite;
+        background: linear-gradient(to right, #3498db, #e67e22);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .footer-text {
+        font-size: 16px;
+        color: #bdc3c7;
+        margin-top: 10px;
+        opacity: 0.8;
+    }
+
+    
+    @keyframes floating {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-15px); }
+        100% { transform: translateY(0px); }
+    }
+
+    
+    footer::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(230, 126, 34, 0.1) 0%, transparent 70%);
+        pointer-events: none;
+    }
+    </style>
+</head>
+<body>
+    <h1 class="shadow-drop-2-center">Animation Site</h1>
+    <h2 class="shadow-inset-center">What is Animation?</h2>
+    <div class="shadow-drop-center">
+<img src="Animation.jpg" width="250"alt="pic">
+</div>
+    <div class ="parent">
+    <div class="box1">
+    <ul>
+      <li>
+        <p>
+          Animation is the art of bringing images,text,or objects to life by creating the illusion of movement. <br></li>
+          <li>Animation transforms static designs into interactive stories.   
+        </p>
+      </li>
+    </ul>
+  </div>
+   <div class="box2">
+    <ul>
+      <li>
+        <p>
+          Animation is used to make content more engaging,interactive,and visually appealing.<br></li>
+          <li>Animation adds life to your ideas and motion to your message.   
+        </p>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="shadow-pop-tr">
+<h3>Animation Includes:</h3>
+</div>
+
+
+<div class="animation-steps-container">
+    <div class="step-box blue-step">
+        <h3>Pre-Production</h3>
+        <p>This stage involves storytelling, scriptwriting, and storyboarding. It sets the visual foundation.</p>
+    </div>
+
+    <div class="step-box orange-step">
+        <h3>Production</h3>
+        <p>The execution phase where characters are modeled and animated. It brings ideas to life through motion.</p>
+    </div>
+
+    <div class="step-box purple-step">
+        <h3>Post-Production</h3>
+        <p>The final stage includes compositing and sound design. It renders the project into a professional format.</p>
+    </div>
+</div>
+<footer>
+    <div class="thanks-line">
+        Thank You For Visiting!
+    </div>
+    
+</footer>
+</body>
+</html>
